@@ -6,11 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
  	<link rel="stylesheet" href="assets/css/style.css">
+ 	
+ 	<script language="javascript" type="text/javascript">
+	<!--
+	function trocar(){
+		var obj=document.getElementById('body');
+		if(obj.className=='nightmode'){
+			obj.className='lightmode';
+		}else{
+			obj.className='nightmode';
+		}
+	}
+	//-->
+	</script>
+ 	
 </head>
 <body>
 	<header>
 	<!-- Div Banner -->
-	<div class="div_banner">
+	<div class="div_banner" >
 		<div class="div_banner_imagens">
 			<img typeof="foaf:Image" src="assets/imagens/banner_imagem1.png" alt="" class="img"; >
 		</div>
@@ -19,35 +33,43 @@
 	<!-- Começo do "corpo" do site -->
 	
 	<div class="div_body">
-		<form class="div_form_contato" form name="form1" method="post" action="#">
-			<div class="form-group">
-				<label for="exampleFormControlInput1"><font color="white">Nome:</font></label>
-				<div class="row">
-				    <div class="col">
-				      <input type="text" class="form-control" placeholder="Nome Completo" name="nome">
-				    </div>
+		<div id='body'>
+			<form class="div_form_contato" form name="form1" method="post" action="#">
+				<div class="form-group">
+					<label for="exampleFormControlInput1"><font color="white">Nome:</font></label>
+					<div class="row">
+					    <div class="col">
+					      <input type="text" class="form-control" placeholder="Nome Completo" name="nome">
+					    </div>
+		  			</div>
 	  			</div>
-  			</div>
-  		  <div class="form-group">
-		    <label for="exampleFormControlInput1"><font color="white">Endereço de Email:</font></label>
-		    <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="nome@exemplo.com">
-		  </div>
-		  <div class="form-group">
-		    <label for="exampleFormControlSelect1"><font color="white">Curso:</font></label>
-		    <select class="form-control" id="exampleFormControlSelect1" name="assunto">
-		      <option value="" disabled selected>Selecione um Curso</option>
-		      <option value="sistemas">Sistemas de Informação</option>
-		      <option value="direito">Direito</option>
-		      <option value="historia">Historia</option>
-		    </select>
-		  </div>
-		  <div class="form-group">
-			  <label for="exampleFormControlTextarea1"><font color="white">Foto do Perfil:</font></label>
-			  <input class="form-control" type="file" name="foto" >
-		  </div>
-		  <br><button type="submit" class="btn btn-primary" onclick="return validaDados()">Salvar</button></br>
-		</form>
-
+	  		  <div class="form-group">
+			    <label for="exampleFormControlInput1"><font color="white">Endereço de Email:</font></label>
+			    <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="nome@exemplo.com">
+			  </div>
+			  <div class="form-group">
+			    <label for="exampleFormControlSelect1"><font color="white">Curso:</font></label>
+			    <select class="form-control" id="exampleFormControlSelect1" name="assunto">
+			      <option value="" disabled selected>Selecione um Curso</option>
+			      <option value="sistemas">Sistemas de Informação</option>
+			      <option value="direito">Direito</option>
+			      <option value="historia">Historia</option>
+			    </select>
+			  </div>
+			  <div class="form-group">
+				  <label for="exampleFormControlTextarea1"><font color="white">Foto do Perfil:</font></label>
+				  <input class="form-control" type="file" name="foto" >
+			  </div>
+			  	<button type="submit" class="btn btn-primary" onclick="return validaDados()">Salvar</button></br>
+			  
+			  	<a class="btn btn-help" onclick="trocar();">Troque a cor</a>
+			</form>
+			
+		</div>
+		
+		  	
+		  
+	
 
 	</div>
 	<script src='assets/js/script.js'></script>

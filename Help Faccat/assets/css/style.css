@@ -30,13 +30,18 @@
 	background-color: #17a2b8 !important;
 	border-radius: 5px;
 }
+.nightmode{
+  background: #808080;
+}
+.lightmode{
+  background: #37588B;
+}
 .div_body{
 	display: flex;
 	flex-direction: row;
 	margin-top: 2%;
 	margin-left: 15%;
 	margin-right: 15%;
-	background-color: #37588B !important;
 	border-radius: 5px;
 	-webkit-align-items: center !important;;
 	align-items: center !important;
